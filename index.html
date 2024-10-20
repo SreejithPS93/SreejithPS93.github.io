@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="github-link">
+                <a href="https://github.com/Trojan55" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Sreejith. I specialize in Artificial Intelligence.</p>
+        <img src="image.jpeg" alt="Your Photo" class="profile-pic">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Sreejith, a passionate learner and enthusiast in the fields of Machine Learning and Deep Learning. I enjoy exploring how artificial intelligence can solve complex problems and automate decision-making processes. Through my projects, I aim to bridge the gap between data and impactful solutions, constantly learning new techniques and pushing the boundaries of what's possible with AI.
+
+Feel free to explore my work and reach out if you'd like to collaborate!
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Stock market prediction</h3>
+            <p>Predict the future stock market prices using previous data. Implemented using RNN with the help of LSTM cells.</p>
+            <a href="https://github.com/Trojan55/Stock-Market-Prediction" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Toxicity prediction</h3>
+            <p>Predict the toxicity of molecules(LD50 values). Implemented using a Random Forest Regressor model. </p>
+            <a href="https://github.com/Trojan55/Toxicity_prediction" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Handwritten digit classification</h3>
+            <p>A deep neural network that can classifty handwritten digits</p>
+            <a href="https://github.com/Trojan55/Digit_classification" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="thank-you-message" style="display:none;">Thank you for your message!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
